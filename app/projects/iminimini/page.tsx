@@ -8,9 +8,17 @@ function page() {
     <div>
         <Navbar></Navbar>
 
+        <p>some images ive edited from exisitsitng imagesg</p>
+
         <div id="containgagmens">
-            <Image alt="robbbob" width={500} height={500} src="/art1.png"></Image>
-            <Image alt="robbbob" width={500} height={500} src="/art2.png"></Image>
+            <div id="hope">
+                <Image alt="robbbob" width={500} height={500}  src="/art1.png"></Image>
+                <p id="andadarkwindblows">background photo taken during a bus trip to Vaasa. The text is my full alias</p>
+            </div>
+            <div id="hope">
+                <Image alt="robbbob" width={500} height={500}  src="/art2.png"></Image>
+                <p id="andadarkwindblows">Godspeed You! Black Emperor is my favorite band</p>
+            </div>
         </div>
     </div>
   )
