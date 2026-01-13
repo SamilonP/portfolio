@@ -17,12 +17,50 @@
 }
 
 #andadarkwindblows {
-  white-space: pre;
+  content: none;
+  overflow-wrap: break-word;
   width: 500px;
   height: 500px;
   font-weight: 300;
+  text-align: start;
   color: whitesmoke;
   text-shadow: -1px 1px 5px black;
+}
+
+.bloit::before {
+  content: " ";
+  background-image: url("/robobo.png");
+  width: 700px;
+  height: 700px;
+  background-position: center center;
+  background-size: contain;
+  box-sizing: border-box;
+  position: absolute;
+  left: -30px;
+  top: -10px
+}
+
+.bloit {
+  content: none;
+  position: relative;
+  border: 1px solid white;
+}
+
+#loink:hover {
+  animation: blunk .2s linear alternate;
+}
+
+@keyframes blunk {
+  0% {
+    color: black;
+    margin-top: 0;
+    font-weight: 200;
+  }
+  100% {
+    margin-top: 40px;
+    color: aqua;
+    font-weight: 900;
+  }
 }
 
 #funnyy {
@@ -32,6 +70,7 @@
   -webkit-text-stroke: 1px red;
   animation: colorShit .2s linear infinite;
 }
+
 
 #gameTitle {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -44,6 +83,7 @@
   user-select: none;
   color: white;
   font-weight: 900;
+  overflow-wrap: break-word;
 }
 
 #buton {
